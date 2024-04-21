@@ -1,0 +1,742 @@
+/* ==================
+       初始化样式
+ ==================== */
+
+/*使手机站滚轮更流畅*/
+html {
+    /* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+    overflow-y: scroll; 
+    /*使手机站滚轮更流畅*/
+    -webkit-overflow-scrolling: touch;
+}
+/* 设置默认字体 */
+body{font:14px"宋体","Arial Narrow",HELVETICA;background:#fff;} 
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select {
+    margin: 0;
+    padding: 0;
+	color:#666;
+}
+/* 重置文a元素 */
+a {
+    text-decoration:none; 
+    color:#666
+}
+a:hover {
+    text-decoration:none;
+    color:#cc0000;
+    cursor:pointer;
+}
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* 重置列表元素 */
+ul,
+ol {
+    list-style: none;
+}
+/* 重置图片 */
+img {
+    font-size: 0;
+    border: none;
+}
+
+/* ==================
+          容器
+ ==================== */
+
+.xinui-container {
+	margin: 0 16px;
+}
+
+/* ==================
+        字体大小
+ ==================== */
+
+.xinui-font-12 {
+    font-size: 12px;
+}
+.xinui-font-14{
+    font-size: 14px;
+}
+.xinui-font-16{
+    font-size: 16px;
+}
+.xinui-font-18{
+    font-size: 18px;
+}
+.xinui-font-20{
+    font-size: 20px;
+}
+.xinui-font-24{
+    font-size: 24px;
+}
+.xinui-font-32{
+    font-size: 32px;
+}
+.xinui-font-40{
+    font-size: 40px;
+}
+.xinui-font-48{
+    font-size: 48px;
+}
+.xinui-font-56{
+    font-size: 56px;
+}
+.xinui-font-64{
+    font-size: 64px;
+}
+
+/* ==================
+          浮动
+ ==================== */
+
+/* 左浮动 */
+.xinui-float-left{
+    float: left;
+}
+/* 右浮动 */
+.xinui-float-right{
+    float: right;
+}
+
+/* ==================
+        清除浮动
+ ==================== */
+
+.xinui-clear,
+.xinui-clearfix{
+    zoom: 1;
+}
+.xinui-clear:before,
+.xinui-clearfix:before {
+    display: table;
+    content: " ";
+}
+.xinui-clear:after,
+.xinui-clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    float: none;
+    margin: 0;
+}
+
+/* ==================
+          图片
+ ==================== */
+
+/* 铺满全部 */
+.xinui-img-full img {
+    width: 100%;
+	height: 100%;
+	display: block;
+}
+.xinui-img-max img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+/* ==================
+          动画
+ ==================== */
+
+.xinui-transform{
+    transition:all 0.6s ease 0s;
+	-ms-transition:all 0.6s ease 0s; 	/* IE 9 */
+	-moz-transition:all 0.6s ease 0s; 	/* Firefox */
+	-webkit-transition:all 0.6s ease 0s; /* Safari 和 Chrome */
+	-o-transition:all 0.6s ease 0s; 	/* Opera */
+}
+
+/* ==================
+          flex布局
+ ==================== */
+
+.xinui-flex {
+    display: flex;
+}
+/* 水平靠左，垂直居中 */
+.xinui-flex-x-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* 水平居中，垂直居中  */
+.xinui-flex-x-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 水平靠两边，垂直居中 */
+.xinui-flex-x-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 水平间距相同，垂直居中 */
+.xinui-flex-x-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* 水平居中，垂直靠上 */
+.xinui-flex-x-top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* 水平居中，垂直靠下 */
+.xinui-flex-x-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* 水平居左，垂直居中 */
+.xinui-flex-y-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* 水平居中，垂直居中 */
+.xinui-flex-y-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==================
+        按钮
+ ==================== */
+
+/* 按钮 */
+.xinui-btn {
+    display: inline-block;
+    vertical-align: middle;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid transparent;
+    padding: 0 16px;
+    background-color: #1cbbb4;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.xinui-btn:hover {
+    opacity: .8;
+    color: #fff
+}
+.xinui-btn:active {
+    opacity: 1;
+}
+/* 大型按钮 */
+.xinui-btn-lg {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 25px;
+    font-size: 16px;
+}
+/* 小型按钮 */
+.xinui-btn-sm {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+/* 迷你按钮 */
+.xinui-btn-xs {
+    height: 22px;
+    line-height: 22px;
+    padding: 0 5px;
+    font-size: 12px;
+}
+/* 圆形按钮 */
+.xinui-btn-radius {
+    border-radius: 100px;
+}
+/* 按钮组 */
+.xinui-btn-group {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0
+}
+.xinui-btn-group .xinui-btn {
+    margin-left: 0;
+    margin-right: 0;
+    border-left: 1px solid rgba(255,255,255,.5);
+    border-radius: 0
+}
+.xinui-btn-group .xinui-btn:first-child {
+    border-left: none;
+    border-radius: 2px 0 0 2px
+}
+.xinui-btn-group .xinui-btn-primary {
+    border-left: none
+}
+.xinui-btn-group .xinui-btn-primary:hover {
+    border-color: #d2d2d2;
+    color: #1cbbb4
+}
+.xinui-btn-group .xinui-btn:first-child {
+    border-left: none;
+    border-radius: 2px 0 0 2px
+}
+.xinui-btn-group .xinui-btn-primary:first-child {
+    border-left: 1px solid #d2d2d2
+}
+.xinui-btn-group .xinui-btn:last-child {
+    border-radius: 0 2px 2px 0
+}
+.xinui-btn-group .xinui-btn+.xinui-btn {
+    margin-left: 0
+}
+.xinui-btn-group+.xinui-btn-group {
+    margin-left: 10px
+}
+.xinui-btn-fluid {
+    width: 100%
+}
+/* 镂空按钮 */
+.xinui-border-btn{
+    border-color: #d2d2d2;
+    background: 0 0;
+    color: #5f5f5f
+}
+/* 嫣红 */
+.xinui-border-red {
+    color: #e54d42;
+    border-color: #e54d42;
+    border-width: 1px;
+    border-style: solid;
+}  
+/* 桔橙 */
+.xinui-border-orange {
+    color: #f37b1d;
+    border-color: #f37b1d;
+    border-width: 1px;
+    border-style: solid;
+}
+/* 明黄 */
+.xinui-border-yellow { 
+    color: #fbbd08;
+    border-color: #fbbd08;
+    border-width: 1px;
+    border-style: solid;
+} 
+/* 橄榄 */
+.xinui-border-olive {
+    color: #8dc63f;
+    border-color: #8dc63f;
+    border-width: 1px;
+    border-style: solid;
+} 
+/* 森绿 */
+.xinui-border-green {
+    color: #39b54a;
+    border-color: #39b54a;
+    border-width: 1px;
+    border-style: solid;
+}  
+/* 天青 */
+.xinui-border-cyan {
+    color: #1cbbb4;
+    border-color: #1cbbb4;
+    border-width: 1px;
+    border-style: solid;
+}
+/* 海蓝 */
+.xinui-border-blue {
+    color: #0081ff;
+    border-color: #0081ff;
+    border-width: 1px;
+    border-style: solid;
+} 
+/* 姹紫 */
+.xinui-border-purple {
+    color: #6739b6;
+    border-color: #6739b6;
+    border-width: 1px;
+    border-style: solid;
+}
+/* 木槿 */  
+.xinui-border-mauve {
+    color: #9c26b0;
+    border-color: #9c26b0;
+    border-width: 1px;
+    border-style: solid;
+}  
+/* 桃粉 */
+.xinui-border-pink {
+    color: #e03997;
+    border-color: #e03997;
+    border-width: 1px;
+    border-style: solid;
+}
+/* 棕褐 */
+.xinui-border-brown {
+    color: #a5673f;
+    border-color: #a5673f;
+    border-width: 1px;
+    border-style: solid;
+}  
+/* 玄灰 */
+.xinui-border-grey {
+    color: #8799a3;
+    border-color: #8799a3;
+    border-width: 1px;
+    border-style: solid;
+} 
+/* 草灰 */ 
+.xinui-border-gray {
+    color: #aaaaaa;
+    border-color: #aaaaaa;
+    border-width: 1px;
+    border-style: solid;
+}
+/* 墨黑 */
+.xinui-border-black {
+    color: #333333;
+    border-color: #333333;
+    border-width: 1px;
+    border-style: solid;
+}  
+/* 雅白 */
+.xinui-border-white {
+    color: #ffffff;
+    border-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+} 
+
+/* ==================
+          文本
+ ==================== */
+
+/* 嫣红 */
+.xinui-text-red {
+    color: #e54d42;
+}  
+/* 桔橙 */
+.xinui-text-orange {
+    color: #f37b1d;
+}
+/* 明黄 */
+.xinui-text-yellow { 
+    color: #fbbd08;
+} 
+/* 橄榄 */
+.xinui-text-olive {
+    color: #8dc63f;
+} 
+/* 森绿 */
+.xinui-text-green {
+    color: #39b54a;
+}  
+/* 天青 */
+.xinui-text-cyan {
+    color: #1cbbb4;
+}
+/* 海蓝 */
+.xinui-text-blue {
+    color: #0081ff;
+} 
+/* 姹紫 */
+.xinui-text-purple {
+    color: #6739b6;
+}
+/* 木槿 */  
+.xinui-text-mauve {
+    color: #9c26b0;
+}  
+/* 桃粉 */
+.xinui-text-pink {
+    color: #e03997;
+}
+/* 棕褐 */
+.xinui-text-brown {
+    color: #a5673f;
+}  
+/* 玄灰 */
+.xinui-text-grey {
+    color: #8799a3;
+} 
+/* 草灰 */ 
+.xinui-text-gray {
+    color: #aaaaaa;
+}
+/* 墨黑 */
+.xinui-text-black {
+    color: #333333;
+}  
+/* 雅白 */
+.xinui-text-white {
+    color: #ffffff;
+}  
+/* 阴影 */
+.xinui-text-shadow {
+    text-shadow: 3px 3px 4px rgba(204, 69, 59, 0.2);
+}
+/* 左对齐 */
+.xinui-text-left {
+    text-align: left;
+}
+/* 居中对齐 */
+.xinui-text-center {
+    text-align: center;
+}
+/* 右对齐 */
+.xinui-text-right {
+    text-align: right;
+}
+/* 首字母大写 */
+.xinui-text-Abc {
+	text-transform: Capitalize;
+}
+/* 字母全部大写 */
+.xinui-text-ABC {
+	text-transform: Uppercase;
+}
+/* 字母全部小写 */
+.xinui-text-abc {
+	text-transform: Lowercase;
+}
+/* 价格文本，利用伪元素添加"¥"符号 */
+.xinui-text-price::before {
+	content: "¥";
+	font-size: 80%;
+	margin-right: 4px;
+}
+/* 单行文字省略 */
+.xinui-text-ellipsis-one {
+    max-width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    word-break: break-all;
+        
+}
+/* 两行文字省略 */
+.xinui-text-ellipsis-two {
+    max-width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+/* 三行文字省略 */
+.xinui-text-ellipsis-three {
+    max-width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+/* ==================
+          背景
+ ==================== */
+
+/** …………………… 深色背景 …………………… */
+
+ /* 嫣红 */
+.xinui-bg-red {
+	background-color: #e54d42;
+	color: #ffffff;
+}
+/* 桔橙 */
+.xinui-bg-orange {
+	background-color: #f37b1d;
+	color: #ffffff;
+}
+/* 明黄 */
+.xinui-bg-yellow {
+	background-color: #fbbd08;
+	color: #333333;
+}
+/* 橄榄 */
+.xinui-bg-olive {
+	background-color: #8dc63f;
+	color: #ffffff;
+}
+/* 森绿 */
+.xinui-bg-green {
+	background-color: #39b54a;
+	color: #ffffff;
+}
+/* 天青 */
+.xinui-bg-cyan {
+	background-color: #1cbbb4;
+	color: #ffffff;
+}
+/* 海蓝 */
+.xinui-bg-blue {
+	background-color: #0081ff;
+	color: #ffffff;
+}
+/* 姹紫 */
+.xinui-bg-purple {
+	background-color: #6739b6;
+	color: #ffffff;
+}
+/* 木槿 */
+.xinui-bg-mauve {
+	background-color: #9c26b0;
+	color: #ffffff;
+}
+/* 桃粉 */
+.xinui-bg-pink {
+	background-color: #e03997;
+	color: #ffffff;
+}
+/* 棕褐 */
+.xinui-bg-brown {
+	background-color: #a5673f;
+	color: #ffffff;
+}
+/* 玄灰 */
+.xinui-bg-grey {
+	background-color: #8799a3;
+	color: #ffffff;
+}
+/* 草灰 */
+.xinui-bg-gray {
+	background-color: #f0f0f0;
+	color: #333333;
+}
+/* 墨黑 */
+.xinui-bg-black {
+	background-color: #333333;
+	color: #ffffff;
+}
+/* 雅白 */
+.xinui-bg-white {
+	background-color: #ffffff;
+	color: #666666;
+}
+
+/** …………………… 淡色背景 …………………… */
+
+/* 嫣红 */
+.xinui-bg-red-light {
+	color: #e54d42;
+	background-color: #fadbd9;
+}
+/* 桔橙 */
+.xinui-bg-orange-light {
+	color: #f37b1d;
+	background-color: #fde6d2;
+}
+/* 明黄 */
+.xinui-bg-yellow-light {
+	color: #fbbd08;
+	background-color: #fef2ced2;
+}
+/* 橄榄 */
+.xinui-bg-olive-light {
+	color: #8dc63f;
+	background-color: #e8f4d9;
+}
+/* 森绿 */
+.xinui-bg-green-light {
+	color: #39b54a;
+	background-color: #d7f0dbff;
+}
+/* 天青 */
+.xinui-bg-cyan-light {
+	color: #1cbbb4;
+	background-color: #d2f1f0;
+}
+/* 海蓝 */
+.xinui-bg-blue-light {
+	color: #0081ff;
+	background-color: #cce6ff;
+}
+/* 姹紫 */
+.xinui-bg-purple-light {
+	color: #6739b6;
+	background-color: #e1d7f0;
+}
+/* 木槿 */
+.xinui-bg-mauve-light {
+	color: #9c26b0;
+	background-color: #ebd4ef;
+}
+/* 桃粉 */
+.xinui-bg-pink-light {
+	color: #e03997;
+	background-color: #f9d7ea;
+}
+/* 棕褐 */
+.xinui-bg-brown-light {
+	color: #a5673f;
+	background-color: #ede1d9;
+}
+/* 玄灰 */
+.xinui-bg-grey-light {
+	color: #8799a3;
+	background-color: #e7ebed;
+}
+
+/** …………………… 渐变背景 …………………… */
+
+/* 魅红 */
+.xinui-bg-gradual-red {
+	background-image: linear-gradient(45deg, #f43f3b, #ec008c);
+	color: #ffffff;
+}
+/* 鎏金 */
+.xinui-bg-gradual-orange {
+	background-image: linear-gradient(45deg, #ff9700, #ed1c24);
+	color: #ffffff;
+}
+/* 翠柳 */
+.xinui-bg-gradual-green {
+	background-image: linear-gradient(45deg, #39b54a, #8dc63f);
+	color: #ffffff;
+}
+/* 靛青 */
+.xinui-bg-gradual-purple {
+	background-image: linear-gradient(45deg, #0081ff, #1cbbb4);
+	color: #ffffff;
+}
+/* 惑紫 */
+.xinui-bg-gradual-pink {
+	background-image: linear-gradient(45deg, #9000ff, #5e00ff);
+	color: #ffffff;
+}
+/* 霞彩 */
+.xinui-bg-gradual-blue {
+	background-image: linear-gradient(45deg, #ec008c, #6739b6);
+	color: #ffffff;
+}
+
+/* ==================
+        辅助
+ ==================== */
+
+.xinui-hide {
+    display: none;
+}
+/* 编辑器图片 */
+.xinui-editor{
+    min-height: 100px;
+    line-height: 140%;
+}
+.xinui-editor img{
+    max-width: 100% !important;
+    height: auto !important;
+}

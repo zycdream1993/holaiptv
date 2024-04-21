@@ -1,0 +1,104 @@
+@media (min-width: 320px){html{font-size: 266.667% !important;} }
+@media (min-width: 360px){html{font-size: 300% !important;} }
+@media (min-width: 375px){html{font-size: 312.5% !important;} }
+@media (min-width: 384px){html{font-size: 320% !important;} }
+@media (min-width: 414px){html{font-size: 345% !important;} }
+@media (min-width: 448px){html{font-size: 373.333% !important;} }
+@media (min-width: 480px){html{font-size: 400% !important;} }
+@media (min-width: 512px){html{font-size: 426.667% !important;} }
+@media (min-width: 544px){html{font-size: 453.333% !important;} }
+@media (min-width: 576px){html{font-size: 480% !important;} }
+@media (min-width: 608px){html{font-size: 506.667% !important;} }
+@media (min-width: 640px){html{font-size: 533.333% !important;} }
+@media (min-width: 750px){html{font-size: 625% !important;} }
+
+body {
+    width: 100%;
+    font-size:.18rem;
+}
+.pc {
+    display: none;
+}
+.container {
+    /* margin: 0 0.3rem; */
+}
+i.fa{
+    font-size: .48rem;
+}
+
+.main .container{
+}
+.container .detail{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+.container .left{
+    flex: 1;
+    overflow-y: scroll;
+    /* 隐藏滚动条 */
+    scrollbar-width: none; /* firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    border: 3px solid #637a7d;
+    background-color: #6a8b8f;
+
+    padding: 10px;
+}
+.container .left::-webkit-scrollbar,.container .right::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+.container .left .list{
+    display: flex;
+    margin-bottom: 20px;
+}
+.container .left .list .title{
+    flex: 1;
+    color: #fff;
+}
+.container .left .list .pic{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.container .left .list .pic img{
+    max-width: 100%;
+}
+.container .left .list .num{
+    background-color: #e7324a;
+    color: #fff;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.container .right{
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* 隐藏滚动条 */
+    scrollbar-width: none; /* firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    border: 3px solid #637a7d;
+    background-color: #87a6aa;
+
+    padding: 10px;
+}
+.container .right .list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container .right .list .title{
+    color: #fff;
+}
+.container .right .pic{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.container .right .pic img{
+    width: 40px;
+    height: 40px;
+}
